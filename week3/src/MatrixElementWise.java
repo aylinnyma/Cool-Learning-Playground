@@ -16,8 +16,7 @@ public class MatrixElementWise {
 
         // Element-wise addition
         int sum = 0;
-
-        // Element-wise addition
+        
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
                 C[i][j] = A[i][j] + B[i][j];
