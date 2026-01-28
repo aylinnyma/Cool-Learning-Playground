@@ -43,9 +43,15 @@ public class RockPaperScissors {
             System.out.println("Computer's choice: " + computerChoice);
 
             // Determine the winner
-            //......
-              
-              
+            if (playerIndex == computerIndex) {
+                System.out.println("It's a tie!");
+            } else if ((playerIndex == 0 && computerIndex == 2) ||
+                       (playerIndex == 1 && computerIndex == 0) ||
+                       (playerIndex == 2 && computerIndex == 1)) {
+                System.out.println("You win!");
+            } else {
+                System.out.println("Computer wins!");
+            }
         }
 
         scanner.close();
